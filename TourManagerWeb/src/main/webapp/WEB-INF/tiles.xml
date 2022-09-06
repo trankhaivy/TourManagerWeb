@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache
+Software Foundation//DTD Tiles Configuration 3.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+    <definition name="baseLayout"
+                template="/WEB-INF/layout/base.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header"
+                       value="/WEB-INF/layout/header.jsp" />
+        <put-attribute name="content" value="" />
+        <put-attribute name="footer"
+                       value="/WEB-INF/layout/footer.jsp" />
+    </definition>
+    <definition name="index" extends="baseLayout">
+        <put-attribute name="title" value="Trang chủ" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/index.jsp" />
+    </definition>
+    <definition name="login" extends="baseLayout">
+        <put-attribute name="title" value="Login" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/login.jsp" />
+    </definition>
+    <definition name="register" extends="baseLayout">
+        <put-attribute name="title" value="Dang ki" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/register.jsp" />
+    </definition>
+    <definition name="tour" extends="baseLayout">
+        <put-attribute name="title" value="Quan ly tour" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/tour.jsp" />
+    </definition> 
+    <definition name="updatetour" extends="baseLayout">
+        <put-attribute name="title" value="Quan ly tour" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/updatetour.jsp" />
+    </definition>  
+    <definition name="tourdetail" extends="baseLayout">
+        <put-attribute name="title" value="Chi tiet tour" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/tourdetail.jsp" />
+    </definition>   
+    <definition name="booking" extends="baseLayout">
+        <put-attribute name="title" value="Dat tour" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/booking.jsp" />
+    </definition>  
+    <definition name="bookingdetail" extends="baseLayout">
+        <put-attribute name="title" value="Xem tour da dat" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/bookingdetail.jsp" />
+    </definition>    
+    <definition name="news" extends="baseLayout">
+        <put-attribute name="title" value="Them tin tuc" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/news.jsp" />
+    </definition>   
+    <definition name="listnews" extends="baseLayout">
+        <put-attribute name="title" value="Danh sach tin tuc" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/listnews.jsp" />
+    </definition>
+    <definition name="newsdetail" extends="baseLayout">
+        <put-attribute name="title" value="Tin tuc" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/newsdetail.jsp" />
+    </definition>   
+    
+    <definition name="baseAdminLayout"
+                template="/WEB-INF/layout/base-admin.jsp">
+        <put-attribute name="title" value="Quan tri he thong " />
+        <put-attribute name="left"
+                       value="/WEB-INF/layout/admin-left.jsp" />
+        <put-attribute name="content" value="" />
+        <put-attribute name="footer"
+                       value="/WEB-INF/layout/admin-footer.jsp" />
+    </definition>
+    
+    <definition name="tour-stats" extends="baseAdminLayout">
+        <put-attribute name="title" value="Thong ke" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/tour-stats.jsp" />
+    </definition>    
+    <definition name="tour-month-stats" extends="baseAdminLayout">
+        <put-attribute name="title" value="Thong ke doanh thu theo thang" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/tour-month-stats.jsp" />
+    </definition> 
+    <definition name="tour-quarter-stats" extends="baseAdminLayout">
+        <put-attribute name="title" value="Thong ke doanh thu theo quy" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/tour-quarter-stats.jsp" />
+    </definition>    
+</tiles-definitions>

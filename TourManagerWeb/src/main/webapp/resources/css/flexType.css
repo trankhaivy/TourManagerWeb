@@ -1,0 +1,21 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : Aug 15, 2022, 10:17:26 PM
+    Author     : Admin
+*/
+
+.flexEqual{
+  display: flex;
+  flex-direction: column;
+}
+.flexAll{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.flexShrink{
+  flex-shrink: 0;
+}
